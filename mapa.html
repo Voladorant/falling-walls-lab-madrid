@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapa de Labs · Falling Walls Lab Spain</title>
+  <meta name="description" content="Falling Walls Lab es una red global de competiciones locales. Explora los Labs y sus rutas hacia la Global Finale de Berlín.">
+  <meta name="theme-color" content="#e30613">
+  <link rel="icon" href="assets/logos/fwlab-primary.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="site-header"></div>
+  <main id="main">
+    <section class="page-head page-head--photo"><img class="page-head__bg" src="assets/fotos/fw25-089.jpg" alt="" aria-hidden="true">
+      <div class="wrap">
+        <h1>Una red. <span>Un destino.</span></h1>
+        <p class="intro">Cada temporada, los ganadores de Labs de todo el mundo viajan a Berlín. Madrid es la puerta de España.</p>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top:40px">
+      <div class="wrap">
+        <div class="map-stats">
+          <div><b>91</b><span>Labs en 2026</span></div>
+          <div><b>65</b><span>Países</span></div>
+          <div><b>3.100+</b><span>Candidaturas</span></div>
+          <div><b>100</b><span>Finalistas en Berlín</span></div>
+        </div>
+        <div class="seg map-filter" id="labSeg" role="group" aria-label="Filtrar por región"></div>
+        <div class="map-panel">
+          <div>
+            <div class="map-wrap" data-labmap></div>
+            <div class="map-legend">
+              <span><i style="background:var(--red)"></i>Labs en España</span>
+              <span><i style="background:var(--g80)"></i>Otros Labs</span>
+              <span><i style="background:var(--red);box-shadow:0 0 0 3px var(--red-15)"></i>Berlín · Global Finale</span>
+            </div>
+          </div>
+          <div>
+            <p class="small" style="margin-bottom:10px"><b class="red" id="labCount">0</b> Labs · <b class="red" id="labCountries">0</b> países en el mapa</p>
+            <div class="map-list" id="labList"></div>
+            <div class="lab-card" id="labCard"><h3>Elige un Lab</h3><p>Haz clic en un punto del mapa o en la lista para ver su ficha y su enlace.</p></div>
+          </div>
+        </div>
+        <p class="small" style="margin-top:24px">El mapa muestra una selección de Labs publicados por la Falling Walls Foundation. Consulta la red completa en <a href="https://falling-walls.com/lab" target="_blank" rel="noopener">falling-walls.com/lab</a>.</p>
+      </div>
+    </section>
+
+    <section class="section section--red">
+      <div class="wrap split">
+        <div>
+          <h2>¿Qué muro romperá tu investigación?</h2>
+          <p class="intro">La temporada 2027 empieza en febrero. Tu ruta hacia Berlín empieza en Madrid.</p>
+        </div>
+        <div class="cta-row" style="margin:0"><a class="btn btn--white" href="inscripciones.html">Avísame</a></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="assets/vendor/d3.min.js"></script>
+  <script src="assets/vendor/topojson-client.min.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
